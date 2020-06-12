@@ -5,24 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Cek : MonoBehaviour
 {
-    public int numberScene;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public string nameScene;
+    
     void OnTriggerEnter(Collider other) 
     {
         if(other.CompareTag("Ball"))
         {
-            SceneManager.LoadScene(numberScene);
+            SceneManager.LoadScene(nameScene);
         }    
     }
 }
